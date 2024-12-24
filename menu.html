@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Website</title>
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="menu.style.css" />
+  </head>
+  <body>
+    
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html#home" class="nav-logo">
+          <h2 class="logo-text">☕ Bean Boutique</h2>
+        </a>
+
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+
+          <li class="nav-item">
+            <a href="index.html#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="events.html" class="nav-link">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="brewing.html" class="nav-link">Equipment</a>
+          </li>
+          <li class="nav-item">
+            <a href="Subscriptions.html" class="nav-link">Subscriptions</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="icons">
+          <i class="fas fa-search" id="search-icon"></i>
+          <a href="#" id="wishlist-icon" class="fas fa-heart"></a>
+          <a href="cart.html" id="cart-icon" class="fas fa-shopping-cart"></a>
+        </div>
+
+        <button id="menu-open-button" class="fas fa-bars"></button>
+        
+      </nav>
+    </header>
+
+      <!-- Search Form (Popup) -->
+<div id="search-popup">
+  <form id="search-form">
+    <input type="search" placeholder="Search here..." id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close-search"></i>
+  </form>
+</div>
+
+    <!-- coffee section code  -->
+
+    <section class="coffee" id="coffee">
+      <h3 class="sub-heading">Our Coffee</h3>
+      <h1 class="heading">Most Popular</h1>
+
+      <div class="box-container">
+
+        <div class="box">
+          <img src="image/menu1.jpg" alt="">
+           <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>   
+          <h3>Cappuccino</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>AED15.99</span>
+          <button class="add-to-cart-btn" data-name="Cappuccino" data-price="15.99">Add to Cart</button>
+        </div>
+
+        <div class="box">
+          <img src="image/menu2.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <h3>Hot Chocolate</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span>AED14.99</span>
+          <button class="add-to-cart-btn" data-name="Hot Chocolate" data-price="14.99">Add to Cart</button>
+        </div>
+
+        <div class="box">
+          <img src="image/menu3.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <h3>Espresso</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>AED10.99</span>
+          <button class="add-to-cart-btn" data-name="Espresso" data-price="10.99">Add to Cart</button>
+        </div>
+
+        <div class="box">
+          <img src="image/menu4.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <h3>Mocha</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <span>AED15.99</span>
+          <button class="add-to-cart-btn" data-name="Mocha" data-price="15.99">Add to Cart</button>
+        </div>
+
+        <div class="box">
+          <img src="image/menu5.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <h3>Cold Coffee</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>AED16.99</span>
+          <button class="add-to-cart-btn" data-name="Cold Coffee" data-price="16.99">Add to Cart</button>
+        </div>
+
+        <div class="box">
+          <img src="image/menu6.jpg" alt="">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <h3>Ice Latte</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>AED16.99</span>
+          <button class="add-to-cart-btn" data-name="Ice Latte" data-price="16.99">Add to Cart</button>
+        </div>
+      
+      </div>
+      
+      
+    </section>
+
+          <!-- Contact section -->
+          <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+              <ul class="contact-info-list">
+                <li class="contact-info">
+                  <i class="fa-solid fa-location-crosshairs"></i>
+                  <p>Deira, Dubai</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-regular fa-envelope"></i>
+                  <p>rezowanulislamdhrubo@gmail.com</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>(+971) 0522 360536</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>Saturday: 10:00 AM - 3:00 PM</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>Sunday: Closed</p>
+                </li>
+                <li class="contact-info">
+                  <i class="fa-solid fa-globe"></i>
+                  <p>www.bean.com</p>
+                </li>
+              </ul>
+    
+              <form action="menu.html" class="contact-form">
+                <input type="text" placeholder="Your name" class="form-input" required />
+                <input type="email" placeholder="Your email" class="form-input" required />
+                <textarea placeholder="Your message" class="form-input" required></textarea>
+                <button type="submit" class="button submit-button">Submit</button>
+              </form>
+            </div>
+          </section>
+    
+          <!-- Footer section -->
+          <footer class="footer-section">
+            <div class="section-content">
+              <p class="copyright-text">© 2024 Bean Boutique Coffee Shop</p>
+    
+              <div class="social-link-list">
+                <a href="https://www.facebook.com/profile.php?id=61567213443782" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/b_dhrubo_o/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/b_dhrubo_o" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+    
+              <p class="policy-text">
+                <a href="#" class="policy-link">Privacy policy</a>
+                <span class="separator">•</span>
+                <a href="#" class="policy-link">Refund policy</a>
+              </p>
+            </div>
+          </footer>
+        </main>
+    
+
+  
+        
+<!-- Linking Swiper script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Linking custom script -->
+<script src="menu.script.js"></script>
+
+</body>
+</html>
+

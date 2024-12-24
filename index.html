@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Website</title>
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html#home" class="nav-logo">
+          <h2 class="logo-text">☕ Bean Boutique</h2>
+        </a>
+
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+
+          <li class="nav-item">
+            <a href="index.html#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="events.html" class="nav-link">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="brewing.html" class="nav-link">Equipment</a>
+          </li>
+          <li class="nav-item">
+            <a href="Subscriptions.html" class="nav-link">Subscriptions</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="icons">
+          <i class="fas fa-search" id="search-icon"></i>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="cart.html" class="fas fa-shopping-cart"></a>
+        </div>
+
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </nav>
+
+   
+    </header>
+
+      <!-- Search Form (Popup) -->
+<div id="search-popup">
+  <form id="search-form">
+    <input type="search" placeholder="Search here..." id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close-search"></i>
+  </form>
+</div>
+    
+    <main>
+      <!-- Hero section -->
+      <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="image/1.jpg" alt="" class="image" />
+            <div class="image-data">
+              <span class="text">Enjoy the finest coffee drinks.</span>
+              <h2>
+                Enjoy Our Exclusive <br />
+                Coffee and Cocktails
+              </h2>
+              <a href="menu.html" class="button">Refreshment</a>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="image/2.jpg" alt="" class="image" />
+            <div class="image-data">
+              <span class="text">We really like what we do.</span>
+              <h2>
+                Coffee Beans with a <br />
+                Perfect Aroma
+              </h2>
+              <a href="events.html" class="button">Surprise</a>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="image/3.jpg" alt="" class="image" />
+            <div class="image-data">
+              <span class="text">Making Our coffee with lover.</span>
+              <h2>
+                Alluring and Fragrant <br />
+                Coffee Aroma
+              </h2>
+              <a href="brewing.html" class="button">Self Service</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+    
+
+      <!-- About section -->
+      <section class="about-section" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="image/4.jpg" alt="About" class="about-image" />
+          </div>
+          <div class="about-details">
+            <h2 class="section-title">About Us</h2>
+            <p class="text">At Bean Boutique Coffee Shop, Dubai, we pride ourselves on being a go-to destination for coffee lovers and conversation seekers alike. We're dedicated to providing an exceptional coffee experience in a cozy and inviting atmosphere, where guests can relax, unwind, and enjoy their time in comfort.</p>
+            <div class="social-link-list">
+              <a href="https://www.facebook.com/profile.php?id=61567213443782" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/b_dhrubo_o/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://x.com/b_dhrubo_o" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+ 
+      <!-- Contact section -->
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+          <ul class="contact-info-list">
+            <li class="contact-info">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>Deira, Dubai</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-envelope"></i>
+              <p>rezowanulislamdhrubo@gmail.com</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>(+971) 0522 360536</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Saturday: 10:00 AM - 3:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Sunday: Closed</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-globe"></i>
+              <p>www.bean.com</p>
+            </li>
+          </ul>
+
+          <form action="menu.html" class="contact-form">
+            <input type="text" placeholder="Your name" class="form-input" required />
+            <input type="email" placeholder="Your email" class="form-input" required />
+            <textarea placeholder="Your message" class="form-input" required></textarea>
+            <button type="submit" class="button submit-button">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer section -->
+      <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">© 2024 Bean Boutique Coffee Shop</p>
+
+          <div class="social-link-list">
+            <a href="https://www.facebook.com/profile.php?id=61567213443782" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/b_dhrubo_o/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/b_dhrubo_o" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+
+          <p class="policy-text">
+            <a href="#" class="policy-link">Privacy policy</a>
+            <span class="separator">•</span>
+            <a href="#" class="policy-link">Refund policy</a>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+  </body>
+</html>

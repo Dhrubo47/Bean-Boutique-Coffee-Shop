@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Brewing Equipment</title>
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="brewing.style.css">
+</head>
+<body>
+
+
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html#home" class="nav-logo">
+          <h2 class="logo-text">☕ Bean Boutique</h2>
+        </a>
+
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+
+          <li class="nav-item">
+            <a href="index.html#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="events.html" class="nav-link">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="brewing.html" class="nav-link">Equipment</a>
+          </li>
+          <li class="nav-item">
+            <a href="Subscriptions.html" class="nav-link">Subscriptions</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="icons">
+          <i class="fas fa-search" id="search-icon"></i>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="cart.html" class="fas fa-shopping-cart"></a>
+        </div>
+        
+
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </nav>
+
+   
+    </header>
+
+    <!-- Search Form (Popup) -->
+<div id="search-popup">
+  <form id="search-form">
+    <input type="search" placeholder="Search here..." id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close-search"></i>
+  </form>
+</div>
+
+  <!-- Brewing Equipment Section -->
+  <section class="brewing" id="brewing">
+    <h3 class="sub-heading">Brewing Equipment</h3>
+    <h1 class="heading">Top Selling Gear</h1>
+    <div class="box-container">
+      <!-- Brewing Items -->
+      <div class="box">
+        <img src="image/brewing1.jpg" alt="French Press">
+        <h3>French Press</h3>
+        <p class="description">Classic French Press for rich coffee flavors.</p>
+        <span>AED49.99</span>
+        <button class="add-to-cart-btn" data-name="French Press" data-price="49.99">Add to Cart</button>
+      </div>
+      <div class="box">
+        <img src="image/brewing2.jpg" alt="Pour Over Kit">
+        <h3>Pour Over Kit</h3>
+        <p class="description">Precision pour-over set for perfect brews.</p>
+        <span>AED69.99</span>
+        <button class="add-to-cart-btn" data-name="Pour Over Kit" data-price="69.99">Add to Cart</button>
+      </div>
+      <div class="box">
+        <img src="image/brewing3.jpg" alt="Coffee Grinder">
+        <h3>Coffee Grinder</h3>
+        <p class="description">Burr grinder for freshly ground coffee.</p>
+        <span>AED89.99</span>
+        <button class="add-to-cart-btn" data-name="Coffee Grinder" data-price="89.99">Add to Cart</button>
+      </div>
+      <div class="box">
+        <img src="image/brewing4.jpg" alt="Electric Kettle">
+        <h3>Electric Kettle</h3>
+        <p class="description">Fast boiling kettle with temperature control.</p>
+        <span>AED99.99</span>
+        <button class="add-to-cart-btn" data-name="Electric Kettle" data-price="99.99">Add to Cart</button>
+      </div>
+      <div class="box">
+        <img src="image/brewing5.jpg" alt="Espresso Machine">
+        <h3>Espresso Machine</h3>
+        <p class="description">Compact espresso maker for perfect shots.</p>
+        <span>AED399.99</span>
+        <button class="add-to-cart-btn" data-name="Espresso Machine" data-price="399.99">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+   <!-- Contact section -->
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+          <ul class="contact-info-list">
+            <li class="contact-info">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>Deira, Dubai</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-envelope"></i>
+              <p>rezowanulislamdhrubo@gmail.com</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>(+971) 0522 360536</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Saturday: 10:00 AM - 3:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Sunday: Closed</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-globe"></i>
+              <p>www.bean.com</p>
+            </li>
+          </ul>
+
+          <form action="menu.html" class="contact-form">
+            <input type="text" placeholder="Your name" class="form-input" required />
+            <input type="email" placeholder="Your email" class="form-input" required />
+            <textarea placeholder="Your message" class="form-input" required></textarea>
+            <button type="submit" class="button submit-button">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer section -->
+      <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">© 2024 Bean Boutique Coffee Shop</p>
+
+          <div class="social-link-list">
+            <a href="https://www.facebook.com/profile.php?id=61567213443782" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/b_dhrubo_o/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/b_dhrubo_o" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+
+          <p class="policy-text">
+            <a href="#" class="policy-link">Privacy policy</a>
+            <span class="separator">•</span>
+            <a href="#" class="policy-link">Refund policy</a>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <!-- JavaScript -->
+  <script src="brewing.script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Website</title>
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="event.style.css" />
+  </head>
+  <body>
+    
+      <!-- Header / Navbar -->
+      <header>
+        <nav class="navbar">
+          <a href="index.html#home" class="nav-logo">
+            <h2 class="logo-text">☕ Bean Boutique</h2>
+          </a>
+  
+          <ul class="nav-menu">
+            <button id="menu-close-button" class="fas fa-times"></button>
+  
+            <li class="nav-item">
+              <a href="index.html#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="events.html" class="nav-link">Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="menu.html" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="brewing.html" class="nav-link">Equipment</a>
+            </li>
+            <li class="nav-item">
+              <a href="Subscriptions.html" class="nav-link">Subscriptions</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+  
+          <div class="icons">
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+          </div>
+  
+          <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+  
+     
+      </header>
+
+        <!-- Search Form (Popup) -->
+<div id="search-popup">
+  <form id="search-form">
+    <input type="search" placeholder="Search here..." id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close-search"></i>
+  </form>
+</div>
+
+    <main>
+      
+            <!-- Events section -->
+       
+            <div class="slider-container">
+                <!-- Slider List Items -->
+                <div class="slider-wrapper swiper-wrapper">
+                  <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                      <h3 class="slide-subtitle">.</h3>
+                      <h2 class="slide-title">.</h2>
+                      <p class="slide-description">.</p>
+                      <p class="slide-description">.</p>
+                      <a href="menu.html" class="slide-button"><span>35% Discount For New User</span></a>
+                    </div>
+                  </div>
+                  <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                      <h3 class="slide-subtitle"></h3>
+                      <h2 class="slide-title"></h2>
+                      <p class="slide-description">Savor the moment with every sip. It's always the perfect time for a cup of your favorite coffee.</p>
+                      <a href="menu.html" class="slide-button"><span>Up to 40% Discount</span></a>
+                    </div>
+                  </div>
+                  <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                      <h3 class="slide-subtitle">Special Offer</h3>
+                      <h2 class="slide-title">Christmas Sale</h2>
+                      <p class="slide-description">Shop our Christmas Sale from the comfort of your home and enjoy fantastic discounts.</p>
+                      <a href="menu.html" class="slide-button"><span>Discount Up To 50% off</span></a>
+                    </div>
+                  </div>
+                  <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                      <h3 class="slide-subtitle">.</h3>
+                      <h2 class="slide-title">.</h2>
+                      <p class="slide-description">.</p>
+                      <p class="slide-description">.</p>
+                      <a href="brewing.html" class="slide-button"><span>Up To 20% OFF</span></a>
+                    </div>
+                  </div>
+                  <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                      <h3 class="slide-subtitle">.</h3>
+                      <h2 class="slide-title">.</h2>
+                      <p class="slide-description">.</p>
+                      <p class="slide-description">.</p>
+                      <p class="slide-description">.</p>
+                      <a href="brewing.html" class="slide-button"><span>Up To 50% OFF</span></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slider Pagination -->
+                <div class="slider-controls">
+                  <ul class="slider-pagination">
+                    <div class="slider-indicator"></div>
+                    <li class="slider-tab current">New User</li>
+                    <li class="slider-tab">Black Friday</li>
+                    <li class="slider-tab">Christmas Offers</li>
+                    <li class="slider-tab">Monday Special</li>
+                    <li class="slider-tab">Halloween Special</li>
+                  </ul>
+                </div>
+
+    </main>
+        
+      <!-- Linking Swiper script -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- Linking custom script -->
+      <script src="event.script.js"></script>
+
+    </body>
+  </html>
+    

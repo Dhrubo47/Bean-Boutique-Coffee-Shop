@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="cart.style.css" />
+  </head>
+  <body>
+    
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html#home" class="nav-logo">
+          <h2 class="logo-text">☕ Bean Boutique</h2>
+        </a>
+
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+
+          <li class="nav-item">
+            <a href="index.html#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="events.html" class="nav-link">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="menu.html" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="brewing.html" class="nav-link">Equipment</a>
+          </li>
+          <li class="nav-item">
+            <a href="Subscriptions.html" class="nav-link">Subscriptions</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="icons">
+          <i class="fas fa-search" id="search-icon"></i>
+          <a href="#" id="wishlist-icon" class="fas fa-heart"></a>
+          <a href="cart.html" id="cart-icon" class="fas fa-shopping-cart"></a>
+        </div>
+        
+
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </nav>
+      
+
+   
+    </header>
+
+      <!-- Search Form (Popup) -->
+<div id="search-popup">
+    <form id="search-form">
+      <input type="search" placeholder="Search here..." id="search-box">
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close-search"></i>
+    </form>
+  </div>
+
+  <!-- Cart Section -->
+  <section class="cart" id="cart">
+    <h1 class="heading">Your Shopping Cart</h1>
+    <div class="cart-container">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- Items will be dynamically added here -->
+        </tbody>
+      </table>
+      <div class="cart-summary">
+        <h3>Total: <span id="cart-total">AED0.00</span></h3>
+        <button id="checkout-btn" class="cta-btn">Checkout</button>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer section -->
+    <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">© 2024 Bean Boutique Coffee Shop</p>
+
+          <div class="social-link-list">
+            <a href="https://www.facebook.com/profile.php?id=61567213443782" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/b_dhrubo_o/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/b_dhrubo_o" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+
+          <p class="policy-text">
+            <a href="#" class="policy-link">Privacy policy</a>
+            <span class="separator">•</span>
+            <a href="#" class="policy-link">Refund policy</a>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+
+  
+        
+<!-- Linking Swiper script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Linking custom script -->
+<script src="cart.script.js"></script>
+
+</body>
+</html>
+
